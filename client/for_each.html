@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Each</title>
+  </head>
+  <body>
+    <h1></h1>
+    <div id="app"></div>
+    <p>npx http-server client para mostras lo elementos del array</p>
+    <script>
+      const products = [
+        { title: "Burger", price: 121 },
+        { title: "Pizza", price: 20 },
+      ];
+      // Con el elemento capturado
+      const app = document.getElementById("app");
+      // podre ejecutar mi logica de negocio
+      products.forEach((product) => {
+        /*vamos agregando cosas al innerHTML para app*/
+        app.innerHTML += `<li>${product.title} - ${product.price}</li>`;
+      });
+    </script>
+  </body>
+</html>
